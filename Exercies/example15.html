@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Example-15-shop</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+        .product{
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.40);
+            width: max-content;
+            border-radius: 5px;
+            border:none;
+            
+        }
+
+        .productPicDiv {
+            width: 300px;
+            display: flex;
+            position: relative;
+            
+        }
+
+        .productPic {
+            width: 100%;
+            border-radius:5px;
+
+
+        }
+        .addCartDiv{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color:rgba(255, 255, 255, 0.70);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+        }
+        .addCart{
+            background-color: white;
+            padding:10px 15px;
+            border:solid black 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight:600;
+        }
+        .discountDiv{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            font-size: 18px;
+            font-weight:bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            padding: 8px 12px;
+            
+            
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="shopPage">
+
+        <div class="product">
+
+            <div class="productPicDiv">
+
+                <img class="productPic" src="/Youtube/thumbnail/tshirt.webp">
+                <div class="addCartDiv">
+                    <div class="addCart">Add to Cart</div>
+                </div>
+                <div class="discountDiv">
+                    20% OFF
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

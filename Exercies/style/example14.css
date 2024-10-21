@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    margin-bottom: 3000px;
+}
+.generalDiv{
+    padding: 5px 130px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.catInfo{
+    display: flex;
+    align-items: center;
+}
+.catname{
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.catPic{
+    height: 60px;
+    border-radius: 30px;
+}
+.addfriend{
+    background-color: rgb(86, 137, 204);
+    border:none;
+    padding: 15px 20px;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing:1px;
+}
+.Message{
+    background-color: rgb(226, 225, 225);
+    border:none;
+    padding: 15px 20px;
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Modal Title Example</title>
+        <style>
+            .sidebar{
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: green;
+                color: white;
+            }
+            .overlay{
+                font-family: Arial, Helvetica, sans-serif;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .modalFlex{
+                background-color: white;
+                width: 400px;
+                height:200px;
+                padding: 0px 20px;
+                border-radius: 20px;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;   
+                line-height: 40px;   
+            }
+            .modalTitle{
+                font-size: 30px;
+                font-weight: bold;
+            
+            }
+            .modalText{
+                font-size: 20px;
+            }
+            .modalButton{
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="sidebar" >Right side bar</div>
+        <div class="overlay">
+            
+            <div class="modalFlex">
+                <div class="modalTitle">
+                    Modal title
+                </div>
+                <div class="modalText">
+                    This is a modal
+                </div>
+                <div class="modalButton">
+                    <button class="modalButton" >Close</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

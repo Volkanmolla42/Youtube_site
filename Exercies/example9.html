@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>example-9</title>
+    <style>
+        .searchBar {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-seri;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(170, 166, 166);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            border-radius: 10px;
+            transition: all 0.15s;
+            margin-bottom: 30px;
+            color: gray;
+            width: 200px;
+        }
+
+        .searchBar:hover {
+
+            border-color: rgb(110, 109, 109);
+        }
+
+        .searchBar2 {
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 30px;
+            border-style: none;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: rgb(75, 73, 73);
+            transition: 0.15s;
+            width: 200px;
+            margin-bottom: 30px;
+
+        }
+
+        .searchBar2:hover {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30);
+        }
+
+        .linkedinBar {
+            width: 400px;
+            font-size: 16px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(100, 100, 100);
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+
+        }
+
+        .email {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            margin-bottom: 5px;
+
+        }
+
+        .policy {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .linkedinButton {
+            font-size: 16px;
+            font-family: arial;
+            color: rgb(235, 230, 230);
+            background-color: rgb(2, 2, 245);
+            text-align: center;
+            width: 400px;
+            height: 50px;
+            border-style: none;
+            border-color: rgb(100, 100, 100);
+            border-radius: 30px;
+            cursor: pointer;
+            margin-bottom: 30px;
+
+
+        }
+
+        .linkedinButton:hover {
+            background-color: rgb(58, 58, 247);
+        }
+
+        .cat {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            vertical-align: middle;
+            margin-right: 5px;
+            cursor: pointer;
+            padding: 3px 0 3px 3px;
+        }
+
+        .twitterText {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 5px;
+            color: rgb(78, 77, 77);
+            vertical-align: middle;
+            border: none;
+            width: 250px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 10px;
+            border-radius: 10px;
+            background-color: rgb(240, 233, 233);
+
+
+
+
+        }
+
+        .tweetButton {
+            margin-left: 10px;
+            margin-right: 8px;
+            background-color: rgb(40, 175, 238);
+            border-radius: 30px;
+            border-style: none;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            vertical-align: middle;
+            cursor: pointer;
+
+        }
+
+        .tweetButton:hover {
+            opacity: 0.80;
+        }
+
+        .catTweetDiv {
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.40);
+            display: inline-block;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 2px 2px 2px 2px;
+            margin-bottom: 20px
+        }
+        .catwitterDiv {
+            width: 415px;
+
+        }
+
+        .profileDiv {
+
+            display: inline-block;
+            margin: 5px 20px 5px 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.40);
+            padding: 5px 5px 0 5px;
+            border-radius: 10px;
+            border: none;
+
+
+
+        }
+        .catPic {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 30px;
+            object-fit: cover;
+
+        }
+
+        .catTextDiv {
+
+            display: inline-block;
+            margin: 0px 15px 0px 15px;
+            width: 200px;
+            padding-bottom: 5px;
+            vertical-align: top;
+
+
+        }
+
+        .catName {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+
+        }
+
+        .catType,
+        .catInfo {
+            margin: 5px 0 0 0;
+            color: rgb(146, 142, 142);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        .followButtonDiv {
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px 5px;
+        }
+
+        .followButton {
+            background-color: rgb(50, 159, 209);
+            color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <input class="searchBar" type="text" placeholder="Search"><br>
+    <input class="searchBar2" type="text" placeholder="Search"><br>
+    <p class="email">Email</p>
+    <input class="linkedinBar" type="text">
+    <p class="policy">By clicking Agree & Join, you agree to the Provacy Policy.</p>
+    <button class="linkedinButton">Agree & Join</button><br>
+    <div class="catTweetDiv">
+        <img class="cat" src="/Youtube/thumbnail/cat1.jpg">
+        <input class="twitterText" type="text" placeholder="What's happening?">
+        <button class="tweetButton">Tweet</button>
+    </div><br>
+
+
+    <div class="catwitterDiv">
+
+
+        <div class="profileDiv">
+
+            <img class="catPic" src="/Youtube/thumbnail/Cat03.jpg">
+
+            <div class="catTextDiv">
+                <p class="catName">oliver</p>
+                <p class="catType">the cat</p>
+                <p class="catInfo">Popular</p>
+            </div>
+            <div class="followButtonDiv">
+                <button class="followButton">Follow</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="profileDiv">
+            <img class="catPic" src="/Youtube/thumbnail/ss.jpg">
+
+            <div class="catTextDiv">
+
+                <p class="catName">malfoy</p>
+                <p class="catType">the Yatik Kamyon</p>
+                <p class="catInfo">He likes eating.</p>
+
+            </div>
+            <div class="followButtonDiv">
+                <button class="followButton">Follow</button>
+            </div>
+
+
+
+        </div>
+        <div class="profileDiv">
+
+
+            <img class="catPic" src="/Youtube/thumbnail/cat5.webp">
+            <div class="catTextDiv">
+                <p class="catName">Harry</p>
+                <p class="catType">the mage</p>
+                <p class="catInfo"> He's cool.</p>
+            </div>
+            <div class="followButtonDiv">
+
+                <button class="followButton">Follow</button>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
